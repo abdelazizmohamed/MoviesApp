@@ -29,5 +29,8 @@ Popular movies app is the graduation project in Udacity's Android course.
 To be able to properly build and test the project, a new API key must be requested from TMDb.
 API key should then be updated in ../res/values/strings.xml
 
-# Testing
-A fully functional APK is included under ./signed APK/ for testing purposes.
+## View project
+https://www.portfoliobox.net/admin#/moviesapp
+
+## Android Developer Nanodegree
+[![Udacity](https://cloud.githubusercontent.com/assets/3719141/14508774/c7f6cbce-01d1-11e6-9daf-02bcd10b6400.jpeg)](https://www.udacity.com/course/android-developer-nanodegree--nd801)
