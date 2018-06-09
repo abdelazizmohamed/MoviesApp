@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/DetailScroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDetails"
+    android:orientation="vertical"
+    tools:context="com.example.hp_lap.popmovies.activitiesanddatabase.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="#c618304e"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Header_title"
+                android:layout_width="266dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/star_fav"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:onClick="onToggleStar"
+                android:text="★"
+                android:textColor="#ffffff"
+                android:textSize="55sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Image_poster"
+                android:layout_width="141dp"
+                android:layout_height="191dp" />
+
+            <LinearLayout
+                android:layout_width="217dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center|center_vertical"
+                    android:fontFamily="cursive"
+                    android:shadowColor="#000000"
+                    android:text="Release date :"
+                    android:textColor="#593d93"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Release_date"
+                    android:layout_width="168dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_horizontal|center|center_vertical"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center|center_vertical"
+                    android:fontFamily="cursive"
+                    android:shadowColor="#000000"
+                    android:text="Rate :"
+                    android:textColor="#593d93"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Rate"
+                    android:layout_width="119dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal|center|center_vertical"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!--  <ImageButton android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:onClick="onToggleStar"
+                 />
+         -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000000"
+                android:text="DESCRIPTION :"
+                android:textColor="#593d93"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:shadowColor="#000000"
+            android:text="TRAILERS :"
+            android:textColor="#593d93"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecTrial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:shadowColor="#000000"
+            android:text="REVIEWS :"
+            android:textColor="#593d93"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--
+            <include
+                android:id="@+id/Review"
+                layout="@layout/activity_reviews"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+                    <include
+                        android:id="@+id/Trailer"
+                        layout="@layout/activity_trailer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+            -->
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
