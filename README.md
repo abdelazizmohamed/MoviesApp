@@ -30,7 +30,7 @@ To be able to properly build and test the project, a new API key must be request
 API key should then be updated in ../res/values/strings.xml
 
 ## View project
-https://www.portfoliobox.net/admin#/moviesapp
+https://abdelaziz122.portfoliobox.net/moviesapp
 
 ## Android Developer Nanodegree
 [![Udacity](https://cloud.githubusercontent.com/assets/3719141/14508774/c7f6cbce-01d1-11e6-9daf-02bcd10b6400.jpeg)](https://www.udacity.com/course/android-developer-nanodegree--nd801)
